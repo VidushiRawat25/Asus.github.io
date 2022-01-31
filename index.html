@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ASUS VIVOBOOK 15</title>
+
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+
     <style>
         */ html {
             box-sizing: border-box;
-            /* line-height: 1.15; */
+            line-height: 1.15;
             /* 1 */
             -webkit-text-size-adjust: 100%;
             /* 2 */
@@ -19,7 +21,9 @@
         body {
             margin: 0;
             display: grid;
-            grid-template-rows: auto;
+            grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+            grid-auto-rows: minmax(auto-fill);
+            grid-auto-columns: minmax(auto-fill);
         }
 
         nav ul.new {
@@ -27,7 +31,7 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background-color: #28334AFF;
+            background-color: #333D79FF;
             position: fixed;
             top: 0;
             width: 100%;
@@ -44,11 +48,6 @@
             text-decoration: none;
         }
 
-
-        section {
-            background-color: beige;
-        }
-
         a {
             padding-left: 1.5rem;
 
@@ -57,29 +56,30 @@
             text-decoration: none;
         }
 
+
+
+        section {
+            background-color: rgb(236 232 226);
+        }
+
+
+
         a:hover {
 
-            color: #F65058FF;
-
-
+            color: #339E66FF;
         }
 
         .box1 {
             display: grid;
-            grid-template-rows: auto;
-            background-image: url('Asus.jpg');
+            background-image: url("Asus.jpg");
             background-size: 100% 100%;
-            height: 34rem;
-            font-size: x-large;
-            font-family: 'Times New Roman', Times, serif;
-            color: rgb(0, 0, 0);
+            background-repeat: no-repeat;
+            height: 35rem;
             margin-top: 2.5rem;
         }
 
-        .first {
-            text-align: right;
-            margin: 3rem;
-        }
+
+
 
         .box2 {
             display: grid;
@@ -99,15 +99,20 @@
             grid-column-end: 4;
             height: 23rem;
             width: 33rem;
-            /* margin-left: 0;
-         display: flex;
-         flex-direction: column; */
-         box-shadow: 5px 10px 18px grey;
         }
 
-        /* .imge {
+        #head {
+            font-size: xx-large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: black;
+            text-decoration: underline;
+            text-align: center;
+        }
+
+        .imge {
             box-shadow: 5px 10px 18px grey;
-        } */
+        }
+
 
         .order {
             font-size: xx-large;
@@ -182,6 +187,14 @@
             }
         }
 
+        .ham {
+            position: fixed;
+            z-index: 3;
+            margin: 8px 0px 0px 10px;
+            display: none;
+            cursor: pointer;
+        }
+
         .box5 {
             display: grid;
             text-align: center;
@@ -199,59 +212,28 @@
             background-image: url(bg.jpg);
             background-size: 100% 100%;
             height: 25rem;
-            /* font-size: x-large; */
-            color: #e0e4e4;
-            justify-content: center;
+            font-size: x-large;
+
 
         }
 
         div.block {
-            width: 80vw;
-            height: 20rem;
+            width: 845px;
+            height: 200px;
             text-align: center;
+            margin-left: 115px;
+            margin-top: 62px;
             text-decoration: none;
             font-family: sans-serif;
-            display: flex;
-            justify-content: space-evenly;
-            border-bottom: #cacccc 2px;
-            margin-left: -327px;
-            font-size: larger;
-
+            color: rgba(128, 128, 128, 0.76);
         }
 
-        ul .ten {
+        ul {
             list-style: none;
-            margin-top: 20px;
-            color: white;
         }
 
-        span {
-            display: flex;
-            justify-content: center;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            color: white;
-        }
 
-        h2 {
-            color: rgb(19, 19, 19);
-        }
-
-        .ham {
-            position: fixed;
-            z-index: 3;
-            margin: 8px 0px 0px 10px;
-            display: none;
-            cursor: pointer;
-        }
-
-        .sec1 {
-            flex-wrap: wrap;
-        }
-
-        @media(max-width:1000px) {
-            html {
-                font-size: 12px;
-            }
+        @media(max-width:900px) {
 
             nav ul.new {
                 display: none;
@@ -259,32 +241,22 @@
 
             .hamgo {
                 display: flex;
-                position: fixed;
+                position: absolute;
             }
 
-        }
-
-        #head {
-            font-size: xx-large;
-            font-family: sans-serif;
-            color: black;
-            text-align: center;
-        }
-
-        #hel {
-            color: whitesmoke;
         }
     </style>
 </head>
 
 <body>
+
     <header>
 
         <nav>
             <ul class="new">
                 <li class="non"> <a href="https://www.asus.com/in/Commercial-Laptops/AllProducts/">Product</a></li>
                 <li class="non"><a
-                        href="https://www.flipkart.com/asus-vivobook-15-2021-core-i3-11th-gen-4-gb-256-gb-ssd-windows-10-home-x515ea-ej302ts-thin-light-laptop/p/itm8f1295ecb07ca?pid=COMG6AG739SSHNMH&lid=LSTCOMG6AG739SSHNMHUX9IQD&marketplace=FLIPKART&q=asus+i3+11th+gen&store=6bo%2Fb5g&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_1_8_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_8_na_na_na&fm=SEARCH&iid=e8c5cef7-f232-4a3b-9061-e65ee69bbb87.COMG6AG739SSHNMH.SEARCH&ppt=pp&ppn=pp&ssid=8xw20ie5f5wzhgcg1643602914728&qH=ed88f947670c5508">Features</a>
+                        href="https://www.flipkart.com/asus-vivobook-ultra-14-core-i3-11th-gen-4-gb-256-gb-ssd-windows-10-home-x413ea-ek302ts-thin-light-laptop/p/itm365080f683769">Features</a>
                 </li>
                 <li class="non"><a href="https://www.pcmag.com/categories/laptops/brands/asus">Reviews</a></li>
                 <li class="non"><a href="https://www.asus.com/in/support/callus/">Contact Us</a></li>
@@ -301,72 +273,39 @@
     <section>
         <div class="box2">
             <div class="box3">
-                <h2>ASUS VIVOBOOK 15(2021)</h2>
-                <h2>Core i3 11th Gen(4gb RAM/256gb SSD/WINDOWS 10 Home-X515EAEJ302TS )</h2>
+                <h1>ASUS VIVOBOOK 15(2021)</h1>
+                <H2>Core i3 11th Gen(4gb RAM/256gb SSD/WINDOWS 10 Home-X515EAEJ302TS )</H2>
             </div>
             <div class="box4">
-                <a class="imge" href="https://www.asus.com/in/"><img src="/LAPTOP.jpg" alt="" height="250px" /></a>
-                <h2 id="head">ASUS</h2>
-                  
+                <a class="imge" href="https://www.asus.com/in/"><img src="LAPTOP.jpg" alt="" height="250px"></a>
+                <H2 id="head">ASUS</H2>
             </div>
         </div>
         <h1 class="order">Order Now:</h1>
-        <button class="glow-on-hover" type="button"><a class="abc"
-                href="https://www.flipkart.com/asus-vivobook-15-2021-core-i3-11th-gen-4-gb-256-gb-ssd-windows-10-home-x515ea-ej302ts-thin-light-laptop/p/itm8f1295ecb07ca?pid=COMG6AG739SSHNMH&lid=LSTCOMG6AG739SSHNMHUX9IQD&marketplace=FLIPKART&q=asus+i3+11th+gen&store=6bo%2Fb5g&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_1_8_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_8_na_na_na&fm=SEARCH&iid=e8c5cef7-f232-4a3b-9061-e65ee69bbb87.COMG6AG739SSHNMH.SEARCH&ppt=pp&ppn=pp&ssid=8xw20ie5f5wzhgcg1643602914728&qH=ed88f947670c5508">Click
-                me!</a>
-        </button>
+        <a
+            href="https://www.flipkart.com/asus-vivobook-15-2021-core-i3-11th-gen-4-gb-256-gb-ssd-windows-10-home-x515ea-ej302ts-thin-light-laptop/p/itm8f1295ecb07ca?pid=COMG6AG739SSHNMH&lid=LSTCOMG6AG739SSHNMHUX9IQD&marketplace=FLIPKART&q=asus+i3+11th+gen&store=6bo%2Fb5g&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_1_8_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_8_na_na_na&fm=SEARCH&iid=e8c5cef7-f232-4a3b-9061-e65ee69bbb87.COMG6AG739SSHNMH.SEARCH&ppt=pp&ppn=pp&ssid=8xw20ie5f5wzhgcg1643602914728&qH=ed88f947670c5508">
+            <button class="glow-on-hover" type="button">CLICK ME!</button></a>
         <div class="box5">
             <h2>Why Only Asus Vivobook 15?</h2>
-            <h4 style="font-family: sans-serif;">It has a 15.6 inch full hd antiglare display.It is stylish thin
-                portable and light laptop.It has a
+            <h4>It has a 15.6 inch full hd antiglare display.It is stylish thin portable and light laptop.It has a
                 fingerprint sensor,optical disk drive and is best piece in this price range.</h4>
         </div>
-    </section>
-    <footer>
-        <!-- <div class="foter"> -->
-        <!-- <div class="block">
-                <div class="sec1"
-                    style=" border-right-width: 2px;border-right-style: solid;padding-right: 100px;border-bottom-style: solid;border-bottom-width: 0px;height: 215px;margin-top: 28px;">
-                    <h2 id="hel">Company</h2>
-                    <ul class="osm">
-                        <li class="ten">Contact us</li>
-                        <li class="ten">Shop</li>
-                        <li class="ten">Blog</li>
-                    </ul>
-                </div>
-                <div class="sec1"
-                    style=" border-right-width: 2px;border-right-style: solid;padding-right: 100px;border-bottom-style: solid;border-bottom-width: 0px;height: 215px;margin-top: 28px;">
-                    <h2 id="hel">Social</h2>
-                    <ul class="osm" style="padding: 0px;">
-                        <li class="ten">Facebook</li>
-                        <li class="ten">Instagram</li>
-                        <li class="ten">Twitter</li>
-                    </ul>
-                </div>
-                <div class="sec1" style="  height: 215px;margin-top: 28px; ">
-                    <h2 id="hel">Get the app</h2>
-                    <ul class="osm">
-                        <li class="ten">App store</li>
-                        <li class="ten">play store</li>
-
-                    </ul>
-                </div> -->
-        <!-- </div> -->
+        <div class="type"></a></div>
         <div class="foter">
-            <div class="block" style="margin-top: 20px;">
+            <div class="block">
                 <div class="sec1"
-                    style="float: left; text-align: -moz-left;  width:150.017; height: 200px;border-right-width: 2px;border-right-style: solid;margin-right: -11px;padding-right: 84px; ">
+                    style="float: left; text-align: -moz-left; border-right-width: 2px;border-right-style: solid;padding-right: 62px; width:150.017; height: 212.967;">
                     <h1>Company</h1>
-                    <ul class="ten" style="list-style-type: none;">
+                    <ul>
                         <li>Contact us</li>
                         <li>Shop</li>
                         <li>Blog</li>
                     </ul>
                 </div>
                 <div class="sec2"
-                    style="float: right; text-align: -moz-left; height: 200px; border-right-width: 2px;border-right-style: solid;margin-right: -11px;padding-right: 84px;">
+                    style="float: right; text-align: -moz-left; padding-left: 47px ;margin-left: 123px;border-left-width: 2px;border-left-style: solid">
                     <h1>Social</h1>
-                    <ul class="ten" style="list-style-type: none;">
+                    <ul>
                         <li>Facebook</li>
                         <li>Instagram</li>
                         <li>Twitter</li>
@@ -374,17 +313,14 @@
                 </div>
                 <div class="sec3" style="float: right;width:150.017; height: 212.967;">
                     <h1>Get the app</h1>
-                    <ul class="ten" style="list-style-type: none;">
+                    <ul>
                         <li>App store</li>
                         <li>play store</li>
 
                     </ul>
                 </div>
             </div>
-            <span>Copyright &copy Asus.com inc,all rights reserved</span>
         </div>
-        </div>
-    </footer>
 </body>
 <script>
 
@@ -406,6 +342,7 @@
             count = 1;
         }
     }
+
     var abc = document.querySelector(".new");
     document.querySelector('.ham').addEventListener("click", () => {
         if (
